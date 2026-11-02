@@ -1,0 +1,12 @@
+{
+  "name": "forward-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page da Forward em HTML e CSS",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/live-server/live-server.js --port=3000 --open=./index.html"
+  },
+  "devDependencies": {
+    "live-server": "1.2.2"
+  }
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forward: empresa de tecnologia que cria sites, sistemas e aplicativos que simplificam operações e transformam ideias em possibilidades reais.">
+  <title>Forward | Tecnologia com propósito</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="header band-dark">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Forward, voltar ao início">
+        <svg class="brand__logo" viewBox="0 0 32 28" aria-hidden="true" focusable="false">
+          <path d="M0 0 L15 14 L0 28 Z" fill="currentColor"/>
+          <path d="M32 0 L17 14 L32 28 Z M28 8 L22 14 L28 20 Z" fill="currentColor" fill-rule="evenodd"/>
+        </svg>
+        <span class="brand__name">Forward.</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#sobre">Sobre a Forward</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+        <a href="#contato" class="btn btn--primary nav__cta">
+          Vamos conversar
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section class="hero band-dark" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Tecnologia com propósito</p>
+          <h1 class="hero__title" id="hero-titulo">
+            Conectamos seu negócio ao <span class="highlight">próximo nível</span>
+          </h1>
+          <p class="hero__lead">Criamos sites, sistemas e aplicativos que simplificam operações e transformam ideias em possibilidades reais.</p>
+
+          <div class="hero__actions">
+            <a href="#contato" class="btn btn--primary btn--lg">
+              Vamos construir sua solução
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a href="#solucoes" class="btn btn--ghost">
+              Explore as soluções
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+            </a>
+          </div>
+
+          <p class="hero__note">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12Z"/></svg>
+            Uma conversa para entender seu desafio. Sem compromisso.
+          </p>
+        </div>
+
+        <figure class="hero__visual">
+          <img src="assets/img/hero-conexao.jpg" alt="Ilustração 3D de anéis azuis entrelaçados, representando conexão" width="1152" height="928">
+          <figcaption>Estratégia × Design × Tecnologia</figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <ul class="hero__strip" aria-label="Do desafio à solução">
+          <li class="hero__strip-title" aria-hidden="true">Do desafio à solução</li>
+          <li class="dot-item">Sites &amp; experiências</li>
+          <li class="dot-item">Sistemas &amp; aplicativos</li>
+          <li class="dot-item">Automação &amp; integrações</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 01 SOBRE -->
+    <section class="section band-light" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container about">
+        <div class="about__text">
+          <p class="eyebrow">01 / Sobre a Forward</p>
+          <h2 class="section-title" id="sobre-titulo">Seu desafio de negócio<br>Nossa próxima conexão</h2>
+          <p class="text-lg">Somos uma empresa de tecnologia que aproxima estratégia, design e desenvolvimento para criar soluções digitais que fazem sentido para o seu negócio.</p>
+          <p>Antes de escrever código, ouvimos. Entendemos sua operação, identificamos oportunidades e construímos junto com você — da primeira ideia à evolução contínua.</p>
+          <ul class="checks" aria-label="Nossos valores">
+            <li>Escuta ativa</li>
+            <li>Clareza técnica</li>
+            <li>Visão de longo prazo</li>
+          </ul>
+        </div>
+
+        <figure class="about__media">
+          <img src="assets/img/equipe-forward.jpg" alt="Três pessoas conversando em uma mesa de trabalho com notebook e documentos de projeto" width="1264" height="848" loading="lazy">
+          <figcaption class="about__badge">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/></svg>
+            Diferentes perspectivas. Uma solução conectada.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 SOLUÇÕES -->
+    <section class="section band-dark" id="solucoes" aria-labelledby="solucoes-titulo">
+      <div class="container">
+        <p class="eyebrow">02 / O que construímos</p>
+        <h2 class="section-title" id="solucoes-titulo">A tecnologia certa<br>Para o seu momento</h2>
+
+        <ul class="services">
+          <li class="card">
+            <div class="card__top">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z"/></svg>
+              <span class="card__num" aria-hidden="true">01</span>
+            </div>
+            <h3 class="card__title">Sites que conectam</h3>
+            <p>Experiências rápidas, responsivas e alinhadas à sua marca, para apresentar seu negócio e abrir novas conversas.</p>
+            <p class="card__tags">Sites institucionais · Landing pages · Portais</p>
+          </li>
+          <li class="card">
+            <div class="card__top">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg>
+              <span class="card__num" aria-hidden="true">02</span>
+            </div>
+            <h3 class="card__title">Sistemas sob medida</h3>
+            <p>Ferramentas que se adaptam à sua operação, centralizam informações e apoiam decisões com mais clareza.</p>
+            <p class="card__tags">Plataformas web · Gestão · Áreas do cliente</p>
+          </li>
+          <li class="card">
+            <div class="card__top">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+              <span class="card__num" aria-hidden="true">03</span>
+            </div>
+            <h3 class="card__title">Aplicativos intuitivos</h3>
+            <p>Seu serviço na palma da mão, com jornadas simples e recursos pensados para quem realmente vai usar.</p>
+            <p class="card__tags">Apps mobile · MVPs · Produtos digitais</p>
+          </li>
+          <li class="card">
+            <div class="card__top">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/><path d="M7 11v2a4 4 0 0 0 4 4h2"/></svg>
+              <span class="card__num" aria-hidden="true">04</span>
+            </div>
+            <h3 class="card__title">Automação inteligente</h3>
+            <p>Conecte ferramentas e reduza tarefas repetitivas para sua equipe focar no que precisa de atenção humana.</p>
+            <p class="card__tags">Integrações · APIs · Fluxos automatizados</p>
+          </li>
+          <li class="card">
+            <div class="card__top">
+              <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="11" width="10" height="10" rx="1"/><path d="M3 16h10M8 11v10"/><rect x="14" y="3" width="7" height="7" rx="1"/></svg>
+              <span class="card__num" aria-hidden="true">05</span>
+            </div>
+            <h3 class="card__title">Soluções digitais</h3>
+            <p>Da descoberta de oportunidades à evolução de produtos, encontramos o caminho técnico para o seu próximo passo.</p>
+            <p class="card__tags">Consultoria · Prototipação · Evolução</p>
+          </li>
+          <li class="card card--cta">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3ZM19 2v4M17 4h4M5 18a2 2 0 1 0 0 .01"/></svg>
+            <h3 class="card__title">Ainda não sabe por onde começar?</h3>
+            <p>Conte o desafio. A gente ajuda a desenhar o caminho.</p>
+            <a href="#contato" class="link-arrow">
+              Converse com a Forward
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 03 POR QUE -->
+    <section class="section band-light" id="por-que" aria-labelledby="porque-titulo">
+      <div class="container why">
+        <div class="why__intro">
+          <p class="eyebrow">03 / Por que a Forward</p>
+          <h2 class="section-title" id="porque-titulo">Não é só sobre tecnologia<br>É sobre avançar</h2>
+          <p class="text-lg">Menos complexidade no dia a dia. Mais espaço para o que faz seu negócio crescer.</p>
+        </div>
+
+        <ul class="benefits">
+          <li class="benefit">
+            <svg class="benefit__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M9 14c1.6 1.4 4.4 1.4 6 0M9 10h.01M15 10h.01"/></svg>
+            <h3 class="benefit__title">Feito para o seu contexto</h3>
+            <p>Nada de encaixar sua operação em uma solução genérica. O projeto parte das suas prioridades.</p>
+          </li>
+          <li class="benefit">
+            <svg class="benefit__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 3l16 6.5-7 2-2 7L4 3Z"/></svg>
+            <h3 class="benefit__title">Simples para quem usa</h3>
+            <p>Interfaces claras e acessíveis para reduzir atritos e facilitar a adoção por clientes e equipes.</p>
+          </li>
+          <li class="benefit">
+            <svg class="benefit__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <h3 class="benefit__title">Uma base bem construída</h3>
+            <p>Boas práticas de desenvolvimento, proteção de dados e cuidado com a qualidade desde o início.</p>
+          </li>
+          <li class="benefit">
+            <svg class="benefit__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M10 5h9v9"/></svg>
+            <h3 class="benefit__title">Espaço para evoluir</h3>
+            <p>Arquitetura e escolhas técnicas pensadas para acompanhar as mudanças do seu negócio.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container partnership">
+        <p>Uma parceria de verdade, do planejamento à entrega.</p>
+        <ul class="checks" aria-label="Como é a parceria">
+          <li>Comunicação direta</li>
+          <li>Entregas acompanhadas</li>
+          <li>Decisões compartilhadas</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 NA PRÁTICA -->
+    <section class="section band-dark" id="na-pratica" aria-labelledby="pratica-titulo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">04 / Na prática</p>
+            <h2 class="section-title" id="pratica-titulo">Onde o digital encontra<br>o seu dia a dia</h2>
+          </div>
+          <p class="section-head__aside">Algumas possibilidades para inspirar o que podemos construir juntos.</p>
+        </div>
+
+        <ul class="cases">
+          <li class="case">
+            <div class="mock mock--blue" role="img" aria-label="Exemplo de tela de agenda online com dias da semana e horários disponíveis">
+              <div class="mock__window">
+                <div class="mock__bar"><span class="mock__dots"></span><span class="mock__label">Agenda</span><span class="mock__circle"></span></div>
+                <p class="mock__title">Seu próximo horário</p>
+                <div class="mock__days">
+                  <span>SEG<br>12</span><span>TER<br>13</span><span class="is-active">QUA<br>14</span><span>QUI<br>15</span><span>SEX<br>16</span>
+                </div>
+                <p class="mock__caption">Horários disponíveis</p>
+                <div class="mock__times"><span>09:00</span><span>10:30</span><span>14:00</span></div>
+              </div>
+            </div>
+            <p class="eyebrow eyebrow--plain">Atendimento &amp; serviços</p>
+            <h3 class="case__title">Mais proximidade. Menos atrito.</h3>
+            <p>Agendamentos online, autoatendimento e jornadas que facilitam o acesso aos seus serviços.</p>
+          </li>
+          <li class="case">
+            <div class="mock mock--lavender" role="img" aria-label="Exemplo de painel de operação com status de pedido recebido e pagamento confirmado">
+              <div class="mock__window">
+                <div class="mock__bar"><span class="mock__dots"></span><span class="mock__label">Operação</span><span class="mock__circle"></span></div>
+                <p class="mock__title">Tudo no mesmo lugar.</p>
+                <div class="mock__tabs"><strong>Visão geral</strong><span>Pedidos</span><span>Equipe</span></div>
+                <p class="mock__row">Pedido recebido</p>
+                <p class="mock__row">Pagamento confirmado</p>
+              </div>
+            </div>
+            <p class="eyebrow eyebrow--plain">Gestão &amp; operação</p>
+            <h3 class="case__title">Sua operação em sintonia.</h3>
+            <p>Pedidos, dados e equipes conectados para reduzir retrabalho e dar visibilidade ao dia a dia.</p>
+          </li>
+          <li class="case">
+            <div class="mock mock--mint" role="img" aria-label="Exemplo de portal do cliente com acompanhamento do projeto e documentos compartilhados">
+              <div class="mock__window">
+                <div class="mock__bar"><span class="mock__dots"></span><span class="mock__label">Meu espaço</span><span class="mock__circle"></span></div>
+                <p class="mock__title">Olá, vamos começar?</p>
+                <div class="mock__project">
+                  <strong>Seu projeto digital</strong>
+                  <span>Acompanhe cada etapa</span>
+                </div>
+                <p class="mock__doc">Documentos compartilhados</p>
+              </div>
+            </div>
+            <p class="eyebrow eyebrow--plain">Relacionamento &amp; vendas</p>
+            <h3 class="case__title">Conexões que continuam.</h3>
+            <p>Portais e áreas exclusivas para compartilhar informações e estar mais perto de seus clientes.</p>
+          </li>
+        </ul>
+
+        <p class="footnote">Interfaces conceituais para ilustrar aplicações. Cada projeto é desenhado para uma necessidade específica.</p>
+      </div>
+    </section>
+
+    <!-- 05 COMO TRABALHAMOS -->
+    <section class="section band-light" id="como-trabalhamos" aria-labelledby="como-titulo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">05 / Como trabalhamos</p>
+            <h2 class="section-title" id="como-titulo">Um caminho claro<br>Construído com você</h2>
+          </div>
+          <p class="section-head__aside text-lg">Você participa das decisões. A gente cuida da complexidade.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">01</span>
+            <h3 class="step__title">Entender</h3>
+            <p>Ouvimos você, mapeamos o desafio e definimos os objetivos e as prioridades.</p>
+            <p class="step__result">Diagnóstico e direção</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">02</span>
+            <h3 class="step__title">Desenhar</h3>
+            <p>Transformamos as necessidades em jornadas, protótipos e um plano de projeto claro.</p>
+            <p class="step__result">Escopo e experiência</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">03</span>
+            <h3 class="step__title">Construir</h3>
+            <p>Desenvolvemos e testamos em etapas, com acompanhamento e espaço para ajustes.</p>
+            <p class="step__result">Desenvolvimento e validação</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">04</span>
+            <h3 class="step__title">Evoluir</h3>
+            <p>Preparamos o lançamento e planejamos os próximos passos de suporte e melhoria.</p>
+            <p class="step__result">Entrega e continuidade</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 06 FAQ -->
+    <section class="section band-dark" id="duvidas" aria-labelledby="faq-titulo">
+      <div class="container faq">
+        <div class="faq__intro">
+          <p class="eyebrow">06 / Perguntas frequentes</p>
+          <h2 class="section-title" id="faq-titulo">Antes de dar o próximo passo</h2>
+          <p>Algumas respostas para começar com mais clareza. E espaço para todas as suas outras perguntas.</p>
+          <a href="#contato" class="link-arrow">
+            Fale sobre seu projeto
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <div class="faq__list">
+          <details class="faq__item" open>
+            <summary>Preciso ter uma ideia pronta para começar?</summary>
+            <p>Não. Você pode chegar com um problema, uma oportunidade ou uma ideia inicial. Nossa primeira conversa ajuda a entender o cenário e a identificar os próximos passos.</p>
+          </details>
+          <details class="faq__item" open>
+            <summary>Quanto custa e quanto tempo leva um projeto?</summary>
+            <p>Depende do escopo, das funcionalidades e das integrações. Depois de entender sua necessidade, apresentamos uma proposta com etapas, investimento e prazo estimado.</p>
+          </details>
+          <details class="faq__item" open>
+            <summary>Vocês integram com as ferramentas que já usamos?</summary>
+            <p>Sim. Avaliamos as possibilidades de integração com seus sistemas e serviços, considerando as APIs disponíveis, os dados e os requisitos de segurança.</p>
+          </details>
+          <details class="faq__item" open>
+            <summary>O que acontece depois da entrega?</summary>
+            <p>Podemos planejar suporte, manutenção e evolução conforme a necessidade do projeto. As condições e os canais de acompanhamento são definidos na proposta.</p>
+          </details>
+          <details class="faq__item" open>
+            <summary>Como funciona a participação da minha equipe?</summary>
+            <p>Alinhamos pontos de contato e momentos de validação desde o início. Sua equipe acompanha as entregas e participa das decisões que impactam o negócio.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 CONTATO -->
+    <section class="section band-light contact" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow">07 / Vamos conversar</p>
+          <h2 class="contact__title" id="contato-titulo">O próximo passo do seu negócio começa com uma conversa</h2>
+
+          <h3 class="eyebrow eyebrow--plain contact__subtitle">O que acontece depois?</h3>
+          <ol class="next-steps">
+            <li><span aria-hidden="true">01</span> Lemos sua mensagem com atenção.</li>
+            <li><span aria-hidden="true">02</span> Conversamos sobre o seu desafio.</li>
+            <li><span aria-hidden="true">03</span> Desenhamos uma proposta de caminho.</li>
+          </ol>
+
+          <p class="contact__location">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9"/></svg>
+            Conexões digitais, de qualquer lugar do Brasil.
+          </p>
+        </div>
+
+        <div class="contact__form-wrap">
+          <form class="form" id="form-contato" novalidate aria-labelledby="form-titulo" aria-describedby="form-obrigatorios">
+            <h3 class="form__title" id="form-titulo">Conte sobre o seu projeto.</h3>
+            <p class="form__hint" id="form-obrigatorios">Campos com <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> são obrigatórios.</p>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="nome">Seu nome <span aria-hidden="true">*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" autocomplete="name"
+                       required minlength="3" maxlength="50" aria-required="true" aria-describedby="nome-erro">
+                <p class="field__error" id="nome-erro" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="voce@empresa.com.br" autocomplete="email"
+                       required aria-required="true" aria-describedby="email-erro">
+                <p class="field__error" id="email-erro" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="empresa">Empresa</label>
+              <textarea id="empresa" name="empresa" class="auto-grow" rows="1" placeholder="Nome da sua empresa"
+                        autocomplete="organization" minlength="3" maxlength="50" aria-describedby="empresa-erro"></textarea>
+              <p class="field__error" id="empresa-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="interesse">Qual é o seu interesse? <span aria-hidden="true">*</span></label>
+              <textarea id="interesse" name="interesse" class="auto-grow" rows="1"
+                        placeholder="Ex.: site institucional, sistema de gestão, aplicativo…"
+                        required minlength="3" maxlength="250" aria-required="true" aria-describedby="interesse-erro"></textarea>
+              <p class="field__error" id="interesse-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+              <textarea id="mensagem" name="mensagem" rows="4"
+                        placeholder="Qual desafio você quer resolver? Conte um pouco sobre sua ideia e o momento do seu negócio."
+                        required minlength="3" maxlength="250" aria-required="true" aria-describedby="mensagem-erro"></textarea>
+              <p class="field__error" id="mensagem-erro" aria-live="polite"></p>
+            </div>
+
+            <p class="form__privacy">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3M12 15v2"/></svg>
+              Seus dados serão usados apenas para responder ao seu contato e conversar sobre sua solicitação.
+            </p>
+
+            <p class="form__alert" id="form-alerta" role="alert" hidden>Os campos com * são obrigatórios</p>
+
+            <button type="submit" class="btn btn--primary btn--lg">
+              Enviar mensagem
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Pop-up de sucesso, centralizado na seção 07 -->
+      <div class="popup" id="popup-sucesso" role="dialog" aria-modal="true" aria-labelledby="popup-texto" hidden>
+        <div class="popup__box">
+          <p class="popup__text" id="popup-texto">Formulário enviado com sucesso!</p>
+          <button type="button" class="popup__close" id="popup-fechar">Fechar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer band-dark">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#inicio" class="brand" aria-label="Forward, voltar ao início">
+          <svg class="brand__logo" viewBox="0 0 32 28" aria-hidden="true" focusable="false">
+            <path d="M0 0 L15 14 L0 28 Z" fill="currentColor"/>
+            <path d="M32 0 L17 14 L32 28 Z M28 8 L22 14 L28 20 Z" fill="currentColor" fill-rule="evenodd"/>
+          </svg>
+          <span class="brand__name">Forward</span>
+        </a>
+        <p>Estratégia, design e tecnologia. Conexões que movem o seu negócio</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Explore">
+        <h2 class="footer__heading">Explore</h2>
+        <ul>
+          <li><a href="#sobre">Sobre a Forward</a></li>
+          <li><a href="#solucoes">Nossas soluções</a></li>
+          <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__nav" aria-label="Vamos conectar">
+        <h2 class="footer__heading">Vamos conectar</h2>
+        <ul>
+          <li><a href="#duvidas">Perguntas frequentes</a></li>
+          <li><a href="#contato">Fale sobre seu projeto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#inicio" class="footer__top" aria-label="Voltar ao topo">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© 2026 Forward. Todos os direitos reservados.</p>
+      <p>Feito para conectar ideias ao que vem a seguir.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
