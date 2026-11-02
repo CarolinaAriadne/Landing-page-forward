@@ -1,19 +1,12 @@
-/* ==========================================================
-   Forward — Landing page
-   ========================================================== */
-
 :root {
-  /* Fundos */
   --bg-dark: #2B3546;
   --bg-light: #FFFFFF;
   --bg-input: #F5F6F8;
 
-  /* Textos em faixas brancas */
   --light-title: #111823;
   --light-text: #606975;
   --light-accent: #2458F5;
 
-  /* Textos em faixas escuras */
   --dark-title: #FFFFFF;
   --dark-text: #AEB8CB;
   --dark-accent: #8CA9FF;
@@ -34,7 +27,6 @@
   --section-y: clamp(64px, 9vw, 112px);
 }
 
-/* ---------- Reset ---------- */
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -57,7 +49,6 @@ ul, ol { list-style: none; }
 a { color: inherit; text-decoration: none; }
 button, input, textarea { font: inherit; }
 
-/* Âncoras não ficam escondidas atrás do cabeçalho fixo */
 section[id] { scroll-margin-top: 80px; }
 
 :focus-visible {
@@ -71,7 +62,6 @@ section[id] { scroll-margin-top: 80px; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 
-/* ---------- Acessibilidade ---------- */
 .sr-only {
   position: absolute;
   width: 1px; height: 1px;
@@ -92,7 +82,6 @@ section[id] { scroll-margin-top: 80px; }
 }
 .skip-link:focus { top: 16px; }
 
-/* ---------- Base ---------- */
 .container {
   width: 100%;
   max-width: calc(var(--container) + var(--gutter) * 2);
@@ -122,7 +111,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
   stroke-linejoin: round;
 }
 
-/* Identificadores das seções */
 .eyebrow {
   display: flex;
   align-items: center;
@@ -160,7 +148,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 .section-head__aside { max-width: 360px; font-size: 16px; }
 .section-head__aside.text-lg { font-size: 18px; }
 
-/* ---------- Botões ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -194,7 +181,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 .link-arrow:hover { text-decoration: underline; text-underline-offset: 4px; }
 .band-dark .link-arrow { color: var(--dark-accent); }
 
-/* Lista com “check” */
 .checks {
   display: flex;
   flex-wrap: wrap;
@@ -216,9 +202,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
   transform: rotate(-45deg) translateY(-2px);
 }
 
-/* ==========================================================
-   CABEÇALHO
-   ========================================================== */
 .header {
   position: sticky;
   top: 0;
@@ -279,9 +262,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 .nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ==========================================================
-   HERO
-   ========================================================== */
 .hero { padding-top: clamp(32px, 5vw, 64px); }
 
 .hero__grid {
@@ -363,9 +343,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
   background: var(--dark-accent);
 }
 
-/* ==========================================================
-   01 SOBRE
-   ========================================================== */
 .about {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -399,9 +376,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 }
 .about__badge .icon { color: var(--light-accent); width: 20px; height: 20px; }
 
-/* ==========================================================
-   02 SOLUÇÕES
-   ========================================================== */
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -454,9 +428,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 .card--cta p { color: #fff; margin-bottom: 32px; }
 .card--cta .link-arrow { margin-top: auto; color: #fff; }
 
-/* ==========================================================
-   03 POR QUE
-   ========================================================== */
 .why {
   display: grid;
   grid-template-columns: 0.9fr 1.4fr;
@@ -497,9 +468,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 }
 .partnership > p { font-size: 14px; }
 
-/* ==========================================================
-   04 NA PRÁTICA
-   ========================================================== */
 .cases {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -605,9 +573,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 
 .footnote { margin-top: 56px; font-size: 14px; }
 
-/* ==========================================================
-   05 COMO TRABALHAMOS
-   ========================================================== */
 .steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -646,9 +611,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 }
 .step__result::before { content: "↳"; font-size: 16px; }
 
-/* ==========================================================
-   06 FAQ
-   ========================================================== */
 .faq {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
@@ -684,9 +646,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 .faq__item summary:hover { color: var(--dark-accent); }
 .faq__item p { padding-bottom: 28px; margin-top: -12px; font-size: 15px; }
 
-/* ==========================================================
-   07 CONTATO
-   ========================================================== */
 .contact { position: relative; }
 
 .contact__grid {
@@ -754,7 +713,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 .field textarea { resize: vertical; }
 .field textarea[rows="4"] { min-height: 126px; }
 
-/* Campos que crescem em altura ao chegar ao fim da linha */
 .field textarea.auto-grow {
   resize: none;
   overflow: hidden;
@@ -803,7 +761,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 }
 .form__alert[hidden] { display: none; }
 
-/* Pop-up de sucesso */
 .popup {
   position: absolute;
   inset: 0;
@@ -841,9 +798,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
 }
 .popup__close:hover { background: var(--primary-hover); }
 
-/* ==========================================================
-   RODAPÉ
-   ========================================================== */
 .footer { padding-top: 64px; }
 
 .footer__grid {
@@ -883,9 +837,6 @@ h1, h2, h3 { font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; }
   font-size: 14px;
 }
 
-/* ==========================================================
-   RESPONSIVO
-   ========================================================== */
 @media (max-width: 1100px) {
   .services,
   .cases { grid-template-columns: repeat(2, 1fr); }
