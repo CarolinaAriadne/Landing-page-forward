@@ -1,4 +1,3 @@
-// ---------- Menu mobile ----------
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.getElementById('menu-principal');
 
@@ -23,8 +22,6 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-// ---------- Campos que crescem ao chegar ao fim da linha ----------
-// Fallback para navegadores sem suporte a "field-sizing: content".
 if (!CSS.supports('field-sizing', 'content')) {
   document.querySelectorAll('textarea.auto-grow').forEach((textarea) => {
     const grow = () => {
@@ -37,13 +34,11 @@ if (!CSS.supports('field-sizing', 'content')) {
   });
 }
 
-// ---------- Validação do formulário ----------
 const form = document.getElementById('form-contato');
 const alertBox = document.getElementById('form-alerta');
 const popup = document.getElementById('popup-sucesso');
 const popupClose = document.getElementById('popup-fechar');
 
-// Algo antes e depois do @, um ponto e uma extensão de pelo menos 2 letras
 const EMAIL_REGEX = /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)*\.[A-Za-z]{2,}$/;
 
 const rules = {
@@ -84,7 +79,6 @@ function setFieldError(name, message) {
 function validateField(name) {
   const value = form.elements[name].value.trim();
   const isEmpty = requiredFields.includes(name) && value === '';
-  // Campo obrigatório vazio é sinalizado pela mensagem geral
   const message = isEmpty ? '' : rules[name](value);
   setFieldError(name, message);
   if (isEmpty) form.elements[name].closest('.field').classList.add('is-invalid');
@@ -108,7 +102,6 @@ form.addEventListener('submit', (event) => {
   openPopup();
 });
 
-// Remove o erro assim que a pessoa corrige o campo
 form.addEventListener('input', (event) => {
   const { name } = event.target;
   if (!rules[name] || !event.target.closest('.field').classList.contains('is-invalid')) return;
@@ -117,7 +110,6 @@ form.addEventListener('input', (event) => {
   if (!stillEmpty) alertBox.hidden = true;
 });
 
-// ---------- Pop-up de sucesso ----------
 function openPopup() {
   popup.hidden = false;
   popupClose.focus();
@@ -138,7 +130,6 @@ popup.addEventListener('click', (event) => {
 
 popup.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closePopup();
-  // Mantém o foco dentro do pop-up (único elemento focável)
   if (event.key === 'Tab') {
     event.preventDefault();
     popupClose.focus();
